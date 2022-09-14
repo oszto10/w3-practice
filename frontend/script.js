@@ -21,13 +21,19 @@ let myVariable3 = myVariable + myVariable2;
 //console.log(myVariable3);
 
 function sumVariables(veriable1, veriable2) {
-    console.log(veriable1);
+    console.log(veriable1 + veriable2);
 }
  sumVariables(myVariable, myVariable2);
  sumVariables(8, "nyolc");
  sumVariables("word1", "word2");
 
+ function loadEvent() {
+ console.log("loaded");
+ let rootElement = document.getElementById("root");
+ rootElement.insertAdjacentHTML("beforeend", "hello world")
+ }
 
+window.addEventListener("click", loadEvent());
 
 
 
